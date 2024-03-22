@@ -15,7 +15,7 @@ export const authGuard = new Elysia({
       });
     },
   }))
-  .resolve(() => ({
+  .resolve({as: "global"}, ({}) => ({
     async user() {
       return null;
     },

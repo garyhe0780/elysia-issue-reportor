@@ -1,5 +1,5 @@
 import Elysia from "elysia";
-import { authGuard } from "../guards/inde";
+import { authGuard } from "../guards";
 
 export const aRoute = new Elysia({
 	prefix: "/a",
